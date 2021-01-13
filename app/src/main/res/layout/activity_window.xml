@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WindowActivity">
+
+    <TextView
+        android:id="@+id/windowStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/windowStatusLabel"
+        app:layout_constraintTop_toBottomOf="@+id/windowStatusLabel" />
+
+    <TextView
+        android:id="@+id/windowStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/window_activity_status_label"
+        app:layout_constraintStart_toStartOf="@+id/windowTargetTempTextView"
+        app:layout_constraintTop_toBottomOf="@+id/windowTargetTempTextView" />
+
+    <TextView
+        android:id="@+id/windowTargetTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/windowTargetTempLabel"
+        app:layout_constraintTop_toBottomOf="@+id/windowTargetTempLabel" />
+
+    <TextView
+        android:id="@+id/windowTargetTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/window_activity_target_temp_label"
+        app:layout_constraintStart_toStartOf="@+id/windowCurrentTempTextView"
+        app:layout_constraintTop_toBottomOf="@+id/windowCurrentTempTextView" />
+
+    <TextView
+        android:id="@+id/windowCurTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/window_activity_current_temp_label"
+        app:layout_constraintStart_toStartOf="@+id/windowRoomTextView"
+        app:layout_constraintTop_toBottomOf="@+id/windowRoomTextView" />
+
+    <TextView
+        android:id="@+id/windowCurrentTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/windowCurTempLabel"
+        app:layout_constraintTop_toBottomOf="@+id/windowCurTempLabel" />
+
+    <TextView
+        android:id="@+id/windowRoomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/window_activity_room_label"
+        app:layout_constraintStart_toStartOf="@+id/windowNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/windowNameTextView" />
+
+    <TextView
+        android:id="@+id/windowRoomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/windowRoomLabel"
+        app:layout_constraintTop_toBottomOf="@+id/windowRoomLabel" />
+
+    <TextView
+        android:id="@+id/windowNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/window_activity_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windowNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/windowNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/windowNameLabel" />
+
+    <ProgressBar
+        android:id="@+id/windowActivityProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/flipWindowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="flipWindowStatus"
+        android:text="@string/flip_window_button"
+        app:layout_constraintStart_toStartOf="@+id/windowStatusTextView"
+        app:layout_constraintTop_toBottomOf="@+id/windowStatusTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

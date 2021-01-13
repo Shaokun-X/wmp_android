@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Faircorp</string>
+    <string name="app_description">Welcome on Faircorp\nThe app to manage building windows</string>
+    <string name="window_edit_text_placeholder">Window ID</string>
+    <string name="window_query_button_name">Open</string>
+    <string name="window_list_activity_title">Building Windows</string>
+    <string name="window_activity_name_label">Window Name</string>
+    <string name="window_activity_room_label">Room</string>
+    <string name="window_activity_current_temp_label">Current Room Temperature</string>
+    <string name="window_activity_target_temp_label">Target Room Temperature</string>
+    <string name="window_activity_status_label">Status</string>
+    <string name="menu_windows">Building Windows</string>
+    <string name="menu_rooms">Building Rooms</string>
+    <string name="menu_website">Our Website</string>
+    <string name="menu_email">Send Us An Email</string>
+    <string name="flip_window_button">Flip Status</string>
+    <string name="related_window_button">Open Window</string>
+</resources>

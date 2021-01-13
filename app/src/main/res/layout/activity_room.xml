@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomActivity">
+
+    <TextView
+        android:id="@+id/roomNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Room ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roomNameLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Room Name"
+        app:layout_constraintStart_toStartOf="@+id/roomIdTextView"
+        app:layout_constraintTop_toBottomOf="@+id/roomIdTextView" />
+
+    <TextView
+        android:id="@+id/roomNameLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Current Temperature"
+        app:layout_constraintStart_toStartOf="@+id/roomNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameTextView" />
+
+    <TextView
+        android:id="@+id/roomNameLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Target Temperature"
+        app:layout_constraintStart_toStartOf="@+id/roomCurrentTempTextView"
+        app:layout_constraintTop_toBottomOf="@+id/roomCurrentTempTextView" />
+
+    <TextView
+        android:id="@+id/roomNameLabel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Floor"
+        app:layout_constraintStart_toStartOf="@+id/roomTargetTempTextView"
+        app:layout_constraintTop_toBottomOf="@+id/roomTargetTempTextView" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Windows"
+        app:layout_constraintStart_toStartOf="@+id/roomFloorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/roomFloorTextView" />
+
+    <TextView
+        android:id="@+id/roomIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/roomNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameLabel" />
+
+    <TextView
+        android:id="@+id/roomNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/roomNameLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameLabel2" />
+
+    <TextView
+        android:id="@+id/roomCurrentTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/roomNameLabel3"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameLabel3" />
+
+    <TextView
+        android:id="@+id/roomTargetTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/roomNameLabel4"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameLabel4" />
+
+    <TextView
+        android:id="@+id/roomFloorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/roomNameLabel5"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameLabel5" />
+
+    <ProgressBar
+        android:id="@+id/windowActivityProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roomWindowListRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
